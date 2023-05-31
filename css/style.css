@@ -169,10 +169,10 @@ img {
   background: var(--tranparent-color);
 }
 .bgImage {
-  background: url(/img/Background-Image-loft-luxury-living-room-with-bookshelf-near-bookshelf.webp);
+  background: url(/ArchitectForYou/img/Background-Image-loft-luxury-living-room-with-bookshelf-near-bookshelf.webp);
 }
 .bgImageSecondary {
-  background: url(/img/living-room.webp);
+  background: url(/ArchitectForYou/img/living-room.webp);
 }
 .bgSecondary {
   background: var(--secondary-color);
