@@ -1,0 +1,377 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+/* setup */
+* {
+  box-sizing: border-box;
+  /* text-decoration: none; */
+  margin: 0;
+  font-family: "Hind";
+}
+:root {
+  /* color */
+  --brand-color: rgb(44, 87, 129);
+  --primary-color: rgb(240, 181, 5);
+  --secondary-color: rgb(235, 240, 244);
+  --text-1-color: rgb(17, 33, 49);
+  --text-2-color: rgb(251, 252, 254);
+  --hover-1-color: rgb(124, 187, 253);
+  --hover-2-color: rgb(251, 209, 86);
+  --tag-color: rgb(109, 112, 114);
+  --tranparent-color: rgba(17, 33, 49, 0.8);
+
+  /* size */
+  --size-h1: 72px;
+  --size-h2: 48px;
+  --size-h3: 40px;
+  --size-h4: 32px;
+  --size-h5: 24px;
+  --size-h6: 14px;
+  --size-p: 20px;
+  /* padding */
+  --padding-80: 80px;
+  --padding-40: 40px;
+  --padding-20: 20px;
+  --padding-10: 10px;
+  /* fontWeight */
+  --fontWeight-bold: 800;
+  --fontWeight-semiBold: 600;
+  /* Letter spacing */
+  --letterSpacing-h5: 0.25em;
+  --letterSpacing-h1: 0.02em;
+  --letterSpacing-p: 0.06em;
+  /* Radius */
+  --borderRadius: 2px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h5,
+p,
+a {
+  margin: 0;
+}
+a {
+  text-decoration: 0;
+}
+/* textarea,
+input {
+  outline: none;
+} */
+/* elements */
+img {
+  width: 100%;
+}
+.carouselWrapper {
+  position: relative;
+  width: 100%;
+  flex-wrap: wrap;
+}
+/*---------------- margin,Padding------------------*/
+.fixedPosition{
+  position: fixed;
+  
+}
+.navPoints{
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.contntPoints{
+  top: 40%;
+  left: 40%;
+}
+.displayMenuBlock {
+  display: block;
+}
+.hamBarHide {
+  display: none;
+}
+.bar {
+  width: 25px;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+  background: var(--text-2-color);
+  margin: 5px auto;
+}
+.boxContainer {
+  padding-inline: var(--padding-80);
+}
+.paddingInline {
+  padding-inline: var(--padding-40);
+}
+.paddingInline-20 {
+  padding-inline: var(--padding-20);
+}
+.boxContainer-80 {
+  padding-block: var(--padding-80);
+}
+.paddingBlock-40 {
+  padding-block: var(--padding-40);
+}
+.paddingBlock {
+  padding-block: var(--padding-20);
+}
+.paddingBlock-10 {
+  padding-block: var(--padding-10);
+}
+.marginBlock-80 {
+  margin-block: var(--padding-80);
+}
+.marginBlock-40 {
+  margin-block: var(--padding-40);
+}
+.letterSpacing-h5 {
+  letter-spacing: var(--letterSpacing-h5);
+}
+.letterSpacing-p {
+  letter-spacing: var(--letterSpacing-p);
+}
+/* ---------------------------------flx------------------------------- */
+.flex {
+  display: flex;
+}
+.flexCol {
+  flex-direction: column;
+}
+.alignFlex {
+  align-items: center;
+}
+.spaceBetween {
+  justify-content: space-between;
+}
+.flexCenter {
+  justify-content: center;
+}
+.flexRight {
+  justify-content: right;
+}
+.txtAlign {
+  text-align: center;
+}
+.txtAlignRight {
+  text-align: right;
+}
+/* --------------------width-------------------------- */
+.w-50 {
+  width: 50%;
+}
+.w-40 {
+  width: 45%;
+}
+.w-20 {
+  width: 22%;
+}
+/* ------------------color--------------------------- */
+.bgbrandColor {
+  background: var(--tranparent-color);
+}
+.bgImage {
+  background: url(/img/Background-Image-loft-luxury-living-room-with-bookshelf-near-bookshelf.webp);
+}
+.bgImageSecondary {
+  background: url(/img/living-room.webp);
+}
+.bgSecondary {
+  background: var(--secondary-color);
+}
+.bgtxt2 {
+  background: var(--text-2-color);
+}
+.bgPrimaryHover {
+  background: var(--hover-2-color);
+}
+.bgbrand {
+  background: var(--brand-color);
+}
+.txt1 {
+  color: var(--text-1-color);
+}
+.txt2 {
+  color: var(--text-2-color);
+}
+.txtBrand {
+  color: var(--brand-color);
+}
+.txtColor {
+  color: var(--primary-color);
+}
+/* ---------------btns---------------- */
+.borderRadius {
+  border-radius: var(--borderRadius);
+}
+.btnborder {
+  border: 1px solid var(--brand-color);
+}
+/* ------------------------- hover ----------------------- */
+.links:hover {
+  color: var(--hover-2-color);
+}
+.blueBtn:hover {
+  color: var(--text-1-color);
+  background: var(--hover-1-color);
+}
+.line::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 1px;
+  transition: 1s;
+  background: var(--hover-2-color);
+}
+.line:hover::after {
+  width: 100%;
+}
+.cta:hover {
+  color: var(--text-1-color);
+  background-color: var(--hover-2-color);
+}
+/* active links */
+/* ------------------------typography-------------------------- */
+.fontWeight-800 {
+  font-weight: 800;
+}
+.fontWeight-600 {
+  font-weight: 600;
+}
+.decoration {
+  text-decoration: underline;
+}
+.sty-h1 {
+  font-size: var(--size-h1);
+  letter-spacing: var(--letterSpacing-h1);
+  font-family: Ibarra Real Nova;
+}
+.sty-h2 {
+  font-size: var(--size-h2);
+}
+.sty-h3 {
+  font-size: var(--size-h3);
+}
+.sty-h4 {
+  font-size: var(--size-h4);
+}
+.sty-h5 {
+  font-size: var(--size-h5);
+}
+.sty-h6 {
+  font-size: var(--size-h6);
+}
+.sty-p {
+  font-size: var(--size-p);
+}
+/* card */
+.cardBorder {
+  border: 0.5px solid var(--brand-color);
+}
+.cardBorderRight {
+  border-right: 4px dashed var(--text-2-color);
+}
+.boxBorder {
+  border-bottom: 2px solid var(--secondary-color);
+}
+.tagBox {
+  border-width: 0px 10px 10px 0px;
+  border-style: solid;
+  border-color: var(--brand-color);
+}
+/* form */
+/* --------------------------media query---------------------- */
+@media screen and (max-width: 600px) {
+  .displayHamBlock {
+    display: block;
+  }
+  .hamMenuHide {
+    display: none;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .navLinks {
+    position: fixed;
+    left: 100%;
+    top: 70px;
+    background: var(--tranparent-color);
+    transition: 0.3s;
+  }
+  .navLinks.active {
+    left: 0;
+  }
+  /*---------------- margin,Padding------------------*/
+  .boxContainer {
+    padding-inline: var(--padding-40);
+  }
+  .paddingInline {
+    padding-inline: var(--padding-20);
+  }
+  .paddingInline-20 {
+    padding-inline: var(--padding-10);
+  }
+  .boxContainer-80 {
+    padding-block: var(--padding-40);
+  }
+  .paddingBlock-40 {
+    padding-block: var(--padding-20);
+  }
+  .paddingBlock {
+    padding-block: var(--padding-10);
+  }
+  .marginBlock-80 {
+    margin-block: var(--padding-40);
+  }
+  .marginBlock-40 {
+    margin-block: var(--padding-20);
+  }
+
+  .smMargin-10 {
+    margin: 10px;
+  }
+  .cardBorderRight {
+    border-bottom: 4px dashed var(--text-2-color);
+    border-right: none;
+  }
+  /* ---------------------------------flx------------------------------- */
+  .flexWrap {
+    flex-wrap: Wrap;
+  }
+  .flxColReverse {
+    flex-direction: column-reverse;
+  }
+
+  .w-100 {
+    width: 100%;
+  }
+.smw-50{
+  width: 50%;
+}
+  /* ------------------------typography-------------------------- */
+  .sty-h1 {
+    font-size: var(--size-h2);
+  }
+  .sty-h2 {
+    font-size: var(--size-h3);
+  }
+  .sty-h3 {
+    font-size: var(--size-h4);
+  }
+  .sty-h4 {
+    font-size: var(--size-h5);
+  }
+  .sty-h5 {
+    font-size: var(--size-h6);
+  }
+  .sty-h6 {
+    font-size: 12px;
+  }
+  .sty-p {
+    font-size: 16px;
+  }
+}
